@@ -35,6 +35,7 @@ class Kitob(models.Model):
     muqova=models.CharField(max_length=50,choices=(('Qattiq','Qattiq'),('Yumshoq','Yumshoq')))
     muallif=models.ManyToManyField(Muallif)
 
+
     def __str__(self):
         return self.nom
 
